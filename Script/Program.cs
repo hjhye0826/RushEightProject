@@ -8,5 +8,6 @@ public class Program
 
         var subway = new SubwayManager();
         subway.InitSubwayInfo();
+        subway.SearchSubway();
     }
 }
