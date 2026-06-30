@@ -1,0 +1,1032 @@
+[
+  {
+    "Name": "용산",
+    "Nodes": [
+      {
+        "Name": "남영",
+        "Time": 110,
+        "LineNum": 1
+      }
+    ]
+  },
+  {
+    "Name": "남영",
+    "Nodes": [
+      {
+        "Name": "용산",
+        "Time": 110,
+        "LineNum": 1
+      },
+      {
+        "Name": "서울역",
+        "Time": 120,
+        "LineNum": 1
+      }
+    ]
+  },
+  {
+    "Name": "서울역",
+    "Nodes": [
+      {
+        "Name": "남영",
+        "Time": 120,
+        "LineNum": 1
+      },
+      {
+        "Name": "시청",
+        "Time": 120,
+        "LineNum": 1
+      },
+      {
+        "Name": "숙대입구",
+        "Time": 100,
+        "LineNum": 4
+      },
+      {
+        "Name": "회현",
+        "Time": 90,
+        "LineNum": 4
+      }
+    ]
+  },
+  {
+    "Name": "시청",
+    "Nodes": [
+      {
+        "Name": "서울역",
+        "Time": 120,
+        "LineNum": 1
+      },
+      {
+        "Name": "종각",
+        "Time": 100,
+        "LineNum": 1
+      },
+      {
+        "Name": "충정로",
+        "Time": 110,
+        "LineNum": 2
+      },
+      {
+        "Name": "을지로입구",
+        "Time": 90,
+        "LineNum": 2
+      }
+    ]
+  },
+  {
+    "Name": "종각",
+    "Nodes": [
+      {
+        "Name": "시청",
+        "Time": 100,
+        "LineNum": 1
+      },
+      {
+        "Name": "종로3가",
+        "Time": 90,
+        "LineNum": 1
+      }
+    ]
+  },
+  {
+    "Name": "종로3가",
+    "Nodes": [
+      {
+        "Name": "종각",
+        "Time": 90,
+        "LineNum": 1
+      },
+      {
+        "Name": "종로5가",
+        "Time": 90,
+        "LineNum": 1
+      },
+      {
+        "Name": "안국",
+        "Time": 90,
+        "LineNum": 3
+      },
+      {
+        "Name": "을지로3가",
+        "Time": 70,
+        "LineNum": 3
+      },
+      {
+        "Name": "광화문",
+        "Time": 100,
+        "LineNum": 5
+      },
+      {
+        "Name": "을지로4가",
+        "Time": 90,
+        "LineNum": 5
+      }
+    ]
+  },
+  {
+    "Name": "종로5가",
+    "Nodes": [
+      {
+        "Name": "종로3가",
+        "Time": 90,
+        "LineNum": 1
+      },
+      {
+        "Name": "동대문",
+        "Time": 90,
+        "LineNum": 1
+      }
+    ]
+  },
+  {
+    "Name": "동대문",
+    "Nodes": [
+      {
+        "Name": "종로5가",
+        "Time": 90,
+        "LineNum": 1
+      },
+      {
+        "Name": "동묘앞",
+        "Time": 80,
+        "LineNum": 1
+      },
+      {
+        "Name": "동대문역사문화공원",
+        "Time": 90,
+        "LineNum": 4
+      },
+      {
+        "Name": "혜화",
+        "Time": 90,
+        "LineNum": 4
+      }
+    ]
+  },
+  {
+    "Name": "동묘앞",
+    "Nodes": [
+      {
+        "Name": "동대문",
+        "Time": 80,
+        "LineNum": 1
+      },
+      {
+        "Name": "신설동",
+        "Time": 80,
+        "LineNum": 1
+      },
+      {
+        "Name": "신당",
+        "Time": 100,
+        "LineNum": 6
+      },
+      {
+        "Name": "창신",
+        "Time": 90,
+        "LineNum": 6
+      }
+    ]
+  },
+  {
+    "Name": "신설동",
+    "Nodes": [
+      {
+        "Name": "동묘앞",
+        "Time": 80,
+        "LineNum": 1
+      },
+      {
+        "Name": "제기동",
+        "Time": 90,
+        "LineNum": 1
+      }
+    ]
+  },
+  {
+    "Name": "제기동",
+    "Nodes": [
+      {
+        "Name": "신설동",
+        "Time": 90,
+        "LineNum": 1
+      },
+      {
+        "Name": "청량리",
+        "Time": 100,
+        "LineNum": 1
+      }
+    ]
+  },
+  {
+    "Name": "청량리",
+    "Nodes": [
+      {
+        "Name": "제기동",
+        "Time": 100,
+        "LineNum": 1
+      }
+    ]
+  },
+  {
+    "Name": "당산",
+    "Nodes": [
+      {
+        "Name": "합정",
+        "Time": 170,
+        "LineNum": 2
+      }
+    ]
+  },
+  {
+    "Name": "합정",
+    "Nodes": [
+      {
+        "Name": "당산",
+        "Time": 170,
+        "LineNum": 2
+      },
+      {
+        "Name": "홍대입구",
+        "Time": 100,
+        "LineNum": 2
+      },
+      {
+        "Name": "망원",
+        "Time": 100,
+        "LineNum": 6
+      },
+      {
+        "Name": "상수",
+        "Time": 100,
+        "LineNum": 6
+      }
+    ]
+  },
+  {
+    "Name": "홍대입구",
+    "Nodes": [
+      {
+        "Name": "합정",
+        "Time": 100,
+        "LineNum": 2
+      },
+      {
+        "Name": "신촌",
+        "Time": 110,
+        "LineNum": 2
+      }
+    ]
+  },
+  {
+    "Name": "신촌",
+    "Nodes": [
+      {
+        "Name": "홍대입구",
+        "Time": 110,
+        "LineNum": 2
+      },
+      {
+        "Name": "이대",
+        "Time": 90,
+        "LineNum": 2
+      }
+    ]
+  },
+  {
+    "Name": "이대",
+    "Nodes": [
+      {
+        "Name": "신촌",
+        "Time": 90,
+        "LineNum": 2
+      },
+      {
+        "Name": "아현",
+        "Time": 90,
+        "LineNum": 2
+      }
+    ]
+  },
+  {
+    "Name": "아현",
+    "Nodes": [
+      {
+        "Name": "이대",
+        "Time": 90,
+        "LineNum": 2
+      },
+      {
+        "Name": "충정로",
+        "Time": 90,
+        "LineNum": 2
+      }
+    ]
+  },
+  {
+    "Name": "충정로",
+    "Nodes": [
+      {
+        "Name": "아현",
+        "Time": 90,
+        "LineNum": 2
+      },
+      {
+        "Name": "시청",
+        "Time": 110,
+        "LineNum": 2
+      },
+      {
+        "Name": "애오개",
+        "Time": 100,
+        "LineNum": 5
+      },
+      {
+        "Name": "서대문",
+        "Time": 90,
+        "LineNum": 5
+      }
+    ]
+  },
+  {
+    "Name": "을지로입구",
+    "Nodes": [
+      {
+        "Name": "시청",
+        "Time": 90,
+        "LineNum": 2
+      },
+      {
+        "Name": "을지로3가",
+        "Time": 90,
+        "LineNum": 2
+      }
+    ]
+  },
+  {
+    "Name": "을지로3가",
+    "Nodes": [
+      {
+        "Name": "을지로입구",
+        "Time": 90,
+        "LineNum": 2
+      },
+      {
+        "Name": "을지로4가",
+        "Time": 80,
+        "LineNum": 2
+      },
+      {
+        "Name": "종로3가",
+        "Time": 70,
+        "LineNum": 3
+      },
+      {
+        "Name": "충무로",
+        "Time": 80,
+        "LineNum": 3
+      }
+    ]
+  },
+  {
+    "Name": "을지로4가",
+    "Nodes": [
+      {
+        "Name": "을지로3가",
+        "Time": 80,
+        "LineNum": 2
+      },
+      {
+        "Name": "동대문역사문화공원",
+        "Time": 100,
+        "LineNum": 2
+      },
+      {
+        "Name": "종로3가",
+        "Time": 90,
+        "LineNum": 5
+      },
+      {
+        "Name": "동대문역사문화공원",
+        "Time": 90,
+        "LineNum": 5
+      }
+    ]
+  },
+  {
+    "Name": "동대문역사문화공원",
+    "Nodes": [
+      {
+        "Name": "을지로4가",
+        "Time": 100,
+        "LineNum": 2
+      },
+      {
+        "Name": "신당",
+        "Time": 100,
+        "LineNum": 2
+      },
+      {
+        "Name": "충무로",
+        "Time": 100,
+        "LineNum": 4
+      },
+      {
+        "Name": "동대문",
+        "Time": 90,
+        "LineNum": 4
+      },
+      {
+        "Name": "을지로4가",
+        "Time": 90,
+        "LineNum": 5
+      },
+      {
+        "Name": "청구",
+        "Time": 100,
+        "LineNum": 5
+      }
+    ]
+  },
+  {
+    "Name": "신당",
+    "Nodes": [
+      {
+        "Name": "동대문역사문화공원",
+        "Time": 100,
+        "LineNum": 2
+      },
+      {
+        "Name": "상왕십리",
+        "Time": 100,
+        "LineNum": 2
+      },
+      {
+        "Name": "청구",
+        "Time": 90,
+        "LineNum": 6
+      },
+      {
+        "Name": "동묘앞",
+        "Time": 100,
+        "LineNum": 6
+      }
+    ]
+  },
+  {
+    "Name": "상왕십리",
+    "Nodes": [
+      {
+        "Name": "신당",
+        "Time": 100,
+        "LineNum": 2
+      },
+      {
+        "Name": "왕십리",
+        "Time": 90,
+        "LineNum": 2
+      }
+    ]
+  },
+  {
+    "Name": "왕십리",
+    "Nodes": [
+      {
+        "Name": "상왕십리",
+        "Time": 90,
+        "LineNum": 2
+      },
+      {
+        "Name": "한양대",
+        "Time": 100,
+        "LineNum": 2
+      },
+      {
+        "Name": "행당",
+        "Time": 100,
+        "LineNum": 5
+      },
+      {
+        "Name": "마장",
+        "Time": 100,
+        "LineNum": 5
+      }
+    ]
+  },
+  {
+    "Name": "한양대",
+    "Nodes": [
+      {
+        "Name": "왕십리",
+        "Time": 100,
+        "LineNum": 2
+      }
+    ]
+  },
+  {
+    "Name": "경복궁",
+    "Nodes": [
+      {
+        "Name": "안국",
+        "Time": 100,
+        "LineNum": 3
+      }
+    ]
+  },
+  {
+    "Name": "안국",
+    "Nodes": [
+      {
+        "Name": "경복궁",
+        "Time": 100,
+        "LineNum": 3
+      },
+      {
+        "Name": "종로3가",
+        "Time": 90,
+        "LineNum": 3
+      }
+    ]
+  },
+  {
+    "Name": "충무로",
+    "Nodes": [
+      {
+        "Name": "을지로3가",
+        "Time": 80,
+        "LineNum": 3
+      },
+      {
+        "Name": "동대입구",
+        "Time": 100,
+        "LineNum": 3
+      },
+      {
+        "Name": "명동",
+        "Time": 80,
+        "LineNum": 4
+      },
+      {
+        "Name": "동대문역사문화공원",
+        "Time": 100,
+        "LineNum": 4
+      }
+    ]
+  },
+  {
+    "Name": "동대입구",
+    "Nodes": [
+      {
+        "Name": "충무로",
+        "Time": 100,
+        "LineNum": 3
+      },
+      {
+        "Name": "약수",
+        "Time": 90,
+        "LineNum": 3
+      }
+    ]
+  },
+  {
+    "Name": "약수",
+    "Nodes": [
+      {
+        "Name": "동대입구",
+        "Time": 90,
+        "LineNum": 3
+      },
+      {
+        "Name": "금호",
+        "Time": 90,
+        "LineNum": 3
+      },
+      {
+        "Name": "버티고개",
+        "Time": 90,
+        "LineNum": 6
+      },
+      {
+        "Name": "청구",
+        "Time": 90,
+        "LineNum": 6
+      }
+    ]
+  },
+  {
+    "Name": "금호",
+    "Nodes": [
+      {
+        "Name": "약수",
+        "Time": 90,
+        "LineNum": 3
+      },
+      {
+        "Name": "옥수",
+        "Time": 90,
+        "LineNum": 3
+      }
+    ]
+  },
+  {
+    "Name": "옥수",
+    "Nodes": [
+      {
+        "Name": "금호",
+        "Time": 90,
+        "LineNum": 3
+      }
+    ]
+  },
+  {
+    "Name": "이촌",
+    "Nodes": [
+      {
+        "Name": "신용산",
+        "Time": 100,
+        "LineNum": 4
+      }
+    ]
+  },
+  {
+    "Name": "신용산",
+    "Nodes": [
+      {
+        "Name": "이촌",
+        "Time": 100,
+        "LineNum": 4
+      },
+      {
+        "Name": "삼각지",
+        "Time": 90,
+        "LineNum": 4
+      }
+    ]
+  },
+  {
+    "Name": "삼각지",
+    "Nodes": [
+      {
+        "Name": "신용산",
+        "Time": 90,
+        "LineNum": 4
+      },
+      {
+        "Name": "숙대입구",
+        "Time": 100,
+        "LineNum": 4
+      },
+      {
+        "Name": "효창공원앞",
+        "Time": 130,
+        "LineNum": 6
+      },
+      {
+        "Name": "녹사평",
+        "Time": 110,
+        "LineNum": 6
+      }
+    ]
+  },
+  {
+    "Name": "숙대입구",
+    "Nodes": [
+      {
+        "Name": "삼각지",
+        "Time": 100,
+        "LineNum": 4
+      },
+      {
+        "Name": "서울역",
+        "Time": 100,
+        "LineNum": 4
+      }
+    ]
+  },
+  {
+    "Name": "회현",
+    "Nodes": [
+      {
+        "Name": "서울역",
+        "Time": 90,
+        "LineNum": 4
+      },
+      {
+        "Name": "명동",
+        "Time": 90,
+        "LineNum": 4
+      }
+    ]
+  },
+  {
+    "Name": "명동",
+    "Nodes": [
+      {
+        "Name": "회현",
+        "Time": 90,
+        "LineNum": 4
+      },
+      {
+        "Name": "충무로",
+        "Time": 80,
+        "LineNum": 4
+      }
+    ]
+  },
+  {
+    "Name": "혜화",
+    "Nodes": [
+      {
+        "Name": "동대문",
+        "Time": 90,
+        "LineNum": 4
+      }
+    ]
+  },
+  {
+    "Name": "마포",
+    "Nodes": [
+      {
+        "Name": "공덕",
+        "Time": 100,
+        "LineNum": 5
+      }
+    ]
+  },
+  {
+    "Name": "공덕",
+    "Nodes": [
+      {
+        "Name": "마포",
+        "Time": 100,
+        "LineNum": 5
+      },
+      {
+        "Name": "애오개",
+        "Time": 110,
+        "LineNum": 5
+      },
+      {
+        "Name": "대흥",
+        "Time": 110,
+        "LineNum": 6
+      },
+      {
+        "Name": "효창공원앞",
+        "Time": 100,
+        "LineNum": 6
+      }
+    ]
+  },
+  {
+    "Name": "애오개",
+    "Nodes": [
+      {
+        "Name": "공덕",
+        "Time": 110,
+        "LineNum": 5
+      },
+      {
+        "Name": "충정로",
+        "Time": 100,
+        "LineNum": 5
+      }
+    ]
+  },
+  {
+    "Name": "서대문",
+    "Nodes": [
+      {
+        "Name": "충정로",
+        "Time": 90,
+        "LineNum": 5
+      },
+      {
+        "Name": "광화문",
+        "Time": 120,
+        "LineNum": 5
+      }
+    ]
+  },
+  {
+    "Name": "광화문",
+    "Nodes": [
+      {
+        "Name": "서대문",
+        "Time": 120,
+        "LineNum": 5
+      },
+      {
+        "Name": "종로3가",
+        "Time": 100,
+        "LineNum": 5
+      }
+    ]
+  },
+  {
+    "Name": "청구",
+    "Nodes": [
+      {
+        "Name": "동대문역사문화공원",
+        "Time": 100,
+        "LineNum": 5
+      },
+      {
+        "Name": "신금호",
+        "Time": 100,
+        "LineNum": 5
+      },
+      {
+        "Name": "약수",
+        "Time": 90,
+        "LineNum": 6
+      },
+      {
+        "Name": "신당",
+        "Time": 90,
+        "LineNum": 6
+      }
+    ]
+  },
+  {
+    "Name": "신금호",
+    "Nodes": [
+      {
+        "Name": "청구",
+        "Time": 100,
+        "LineNum": 5
+      },
+      {
+        "Name": "행당",
+        "Time": 100,
+        "LineNum": 5
+      }
+    ]
+  },
+  {
+    "Name": "행당",
+    "Nodes": [
+      {
+        "Name": "신금호",
+        "Time": 100,
+        "LineNum": 5
+      },
+      {
+        "Name": "왕십리",
+        "Time": 100,
+        "LineNum": 5
+      }
+    ]
+  },
+  {
+    "Name": "마장",
+    "Nodes": [
+      {
+        "Name": "왕십리",
+        "Time": 100,
+        "LineNum": 5
+      }
+    ]
+  },
+  {
+    "Name": "망원",
+    "Nodes": [
+      {
+        "Name": "합정",
+        "Time": 100,
+        "LineNum": 6
+      }
+    ]
+  },
+  {
+    "Name": "상수",
+    "Nodes": [
+      {
+        "Name": "합정",
+        "Time": 100,
+        "LineNum": 6
+      },
+      {
+        "Name": "광흥창",
+        "Time": 100,
+        "LineNum": 6
+      }
+    ]
+  },
+  {
+    "Name": "광흥창",
+    "Nodes": [
+      {
+        "Name": "상수",
+        "Time": 100,
+        "LineNum": 6
+      },
+      {
+        "Name": "대흥",
+        "Time": 100,
+        "LineNum": 6
+      }
+    ]
+  },
+  {
+    "Name": "대흥",
+    "Nodes": [
+      {
+        "Name": "광흥창",
+        "Time": 100,
+        "LineNum": 6
+      },
+      {
+        "Name": "공덕",
+        "Time": 110,
+        "LineNum": 6
+      }
+    ]
+  },
+  {
+    "Name": "효창공원앞",
+    "Nodes": [
+      {
+        "Name": "공덕",
+        "Time": 100,
+        "LineNum": 6
+      },
+      {
+        "Name": "삼각지",
+        "Time": 130,
+        "LineNum": 6
+      }
+    ]
+  },
+  {
+    "Name": "녹사평",
+    "Nodes": [
+      {
+        "Name": "삼각지",
+        "Time": 110,
+        "LineNum": 6
+      },
+      {
+        "Name": "이태원",
+        "Time": 90,
+        "LineNum": 6
+      }
+    ]
+  },
+  {
+    "Name": "이태원",
+    "Nodes": [
+      {
+        "Name": "녹사평",
+        "Time": 90,
+        "LineNum": 6
+      },
+      {
+        "Name": "한강진",
+        "Time": 100,
+        "LineNum": 6
+      }
+    ]
+  },
+  {
+    "Name": "한강진",
+    "Nodes": [
+      {
+        "Name": "이태원",
+        "Time": 100,
+        "LineNum": 6
+      },
+      {
+        "Name": "버티고개",
+        "Time": 110,
+        "LineNum": 6
+      }
+    ]
+  },
+  {
+    "Name": "버티고개",
+    "Nodes": [
+      {
+        "Name": "한강진",
+        "Time": 110,
+        "LineNum": 6
+      },
+      {
+        "Name": "약수",
+        "Time": 90,
+        "LineNum": 6
+      }
+    ]
+  },
+  {
+    "Name": "창신",
+    "Nodes": [
+      {
+        "Name": "동묘앞",
+        "Time": 90,
+        "LineNum": 6
+      }
+    ]
+  }
+]
