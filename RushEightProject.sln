@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36518.9 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RushEightProject", "RushEightProject.csproj", "{EB83500F-2ABB-4BF5-8025-D14A0B736A51}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EB83500F-2ABB-4BF5-8025-D14A0B736A51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB83500F-2ABB-4BF5-8025-D14A0B736A51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB83500F-2ABB-4BF5-8025-D14A0B736A51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB83500F-2ABB-4BF5-8025-D14A0B736A51}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {11D9FEBB-CBC8-4DB3-BDDD-FF87C2BF9841}
+	EndGlobalSection
+EndGlobal
