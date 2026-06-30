@@ -1,7 +1,7 @@
 [
   {
     "Name": "용산",
-    "Nodes": [
+    "NextStations": [
       {
         "Name": "남영",
         "Time": 110,
@@ -11,7 +11,7 @@
   },
   {
     "Name": "남영",
-    "Nodes": [
+    "NextStations": [
       {
         "Name": "용산",
         "Time": 110,
@@ -26,7 +26,7 @@
   },
   {
     "Name": "서울역",
-    "Nodes": [
+    "NextStations": [
       {
         "Name": "남영",
         "Time": 120,
@@ -51,7 +51,7 @@
   },
   {
     "Name": "시청",
-    "Nodes": [
+    "NextStations": [
       {
         "Name": "서울역",
         "Time": 120,
@@ -76,7 +76,7 @@
   },
   {
     "Name": "종각",
-    "Nodes": [
+    "NextStations": [
       {
         "Name": "시청",
         "Time": 100,
@@ -91,7 +91,7 @@
   },
   {
     "Name": "종로3가",
-    "Nodes": [
+    "NextStations": [
       {
         "Name": "종각",
         "Time": 90,
@@ -126,7 +126,7 @@
   },
   {
     "Name": "종로5가",
-    "Nodes": [
+    "NextStations": [
       {
         "Name": "종로3가",
         "Time": 90,
@@ -141,7 +141,7 @@
   },
   {
     "Name": "동대문",
-    "Nodes": [
+    "NextStations": [
       {
         "Name": "종로5가",
         "Time": 90,
@@ -166,7 +166,7 @@
   },
   {
     "Name": "동묘앞",
-    "Nodes": [
+    "NextStations": [
       {
         "Name": "동대문",
         "Time": 80,
@@ -191,7 +191,7 @@
   },
   {
     "Name": "신설동",
-    "Nodes": [
+    "NextStations": [
       {
         "Name": "동묘앞",
         "Time": 80,
@@ -206,7 +206,7 @@
   },
   {
     "Name": "제기동",
-    "Nodes": [
+    "NextStations": [
       {
         "Name": "신설동",
         "Time": 90,
@@ -221,7 +221,7 @@
   },
   {
     "Name": "청량리",
-    "Nodes": [
+    "NextStations": [
       {
         "Name": "제기동",
         "Time": 100,
@@ -231,7 +231,7 @@
   },
   {
     "Name": "당산",
-    "Nodes": [
+    "NextStations": [
       {
         "Name": "합정",
         "Time": 170,
@@ -241,7 +241,7 @@
   },
   {
     "Name": "합정",
-    "Nodes": [
+    "NextStations": [
       {
         "Name": "당산",
         "Time": 170,
@@ -266,7 +266,7 @@
   },
   {
     "Name": "홍대입구",
-    "Nodes": [
+    "NextStations": [
       {
         "Name": "합정",
         "Time": 100,
@@ -281,7 +281,7 @@
   },
   {
     "Name": "신촌",
-    "Nodes": [
+    "NextStations": [
       {
         "Name": "홍대입구",
         "Time": 110,
@@ -296,7 +296,7 @@
   },
   {
     "Name": "이대",
-    "Nodes": [
+    "NextStations": [
       {
         "Name": "신촌",
         "Time": 90,
@@ -311,7 +311,7 @@
   },
   {
     "Name": "아현",
-    "Nodes": [
+    "NextStations": [
       {
         "Name": "이대",
         "Time": 90,
@@ -326,7 +326,7 @@
   },
   {
     "Name": "충정로",
-    "Nodes": [
+    "NextStations": [
       {
         "Name": "아현",
         "Time": 90,
@@ -351,7 +351,7 @@
   },
   {
     "Name": "을지로입구",
-    "Nodes": [
+    "NextStations": [
       {
         "Name": "시청",
         "Time": 90,
@@ -366,7 +366,7 @@
   },
   {
     "Name": "을지로3가",
-    "Nodes": [
+    "NextStations": [
       {
         "Name": "을지로입구",
         "Time": 90,
@@ -391,7 +391,7 @@
   },
   {
     "Name": "을지로4가",
-    "Nodes": [
+    "NextStations": [
       {
         "Name": "을지로3가",
         "Time": 80,
@@ -416,7 +416,7 @@
   },
   {
     "Name": "동대문역사문화공원",
-    "Nodes": [
+    "NextStations": [
       {
         "Name": "을지로4가",
         "Time": 100,
@@ -451,7 +451,7 @@
   },
   {
     "Name": "신당",
-    "Nodes": [
+    "NextStations": [
       {
         "Name": "동대문역사문화공원",
         "Time": 100,
@@ -476,7 +476,7 @@
   },
   {
     "Name": "상왕십리",
-    "Nodes": [
+    "NextStations": [
       {
         "Name": "신당",
         "Time": 100,
@@ -491,7 +491,7 @@
   },
   {
     "Name": "왕십리",
-    "Nodes": [
+    "NextStations": [
       {
         "Name": "상왕십리",
         "Time": 90,
@@ -516,7 +516,7 @@
   },
   {
     "Name": "한양대",
-    "Nodes": [
+    "NextStations": [
       {
         "Name": "왕십리",
         "Time": 100,
@@ -526,7 +526,7 @@
   },
   {
     "Name": "경복궁",
-    "Nodes": [
+    "NextStations": [
       {
         "Name": "안국",
         "Time": 100,
@@ -536,7 +536,7 @@
   },
   {
     "Name": "안국",
-    "Nodes": [
+    "NextStations": [
       {
         "Name": "경복궁",
         "Time": 100,
@@ -551,7 +551,7 @@
   },
   {
     "Name": "충무로",
-    "Nodes": [
+    "NextStations": [
       {
         "Name": "을지로3가",
         "Time": 80,
@@ -576,7 +576,7 @@
   },
   {
     "Name": "동대입구",
-    "Nodes": [
+    "NextStations": [
       {
         "Name": "충무로",
         "Time": 100,
@@ -591,7 +591,7 @@
   },
   {
     "Name": "약수",
-    "Nodes": [
+    "NextStations": [
       {
         "Name": "동대입구",
         "Time": 90,
@@ -616,7 +616,7 @@
   },
   {
     "Name": "금호",
-    "Nodes": [
+    "NextStations": [
       {
         "Name": "약수",
         "Time": 90,
@@ -631,7 +631,7 @@
   },
   {
     "Name": "옥수",
-    "Nodes": [
+    "NextStations": [
       {
         "Name": "금호",
         "Time": 90,
@@ -641,7 +641,7 @@
   },
   {
     "Name": "이촌",
-    "Nodes": [
+    "NextStations": [
       {
         "Name": "신용산",
         "Time": 100,
@@ -651,7 +651,7 @@
   },
   {
     "Name": "신용산",
-    "Nodes": [
+    "NextStations": [
       {
         "Name": "이촌",
         "Time": 100,
@@ -666,7 +666,7 @@
   },
   {
     "Name": "삼각지",
-    "Nodes": [
+    "NextStations": [
       {
         "Name": "신용산",
         "Time": 90,
@@ -691,7 +691,7 @@
   },
   {
     "Name": "숙대입구",
-    "Nodes": [
+    "NextStations": [
       {
         "Name": "삼각지",
         "Time": 100,
@@ -706,7 +706,7 @@
   },
   {
     "Name": "회현",
-    "Nodes": [
+    "NextStations": [
       {
         "Name": "서울역",
         "Time": 90,
@@ -721,7 +721,7 @@
   },
   {
     "Name": "명동",
-    "Nodes": [
+    "NextStations": [
       {
         "Name": "회현",
         "Time": 90,
@@ -736,7 +736,7 @@
   },
   {
     "Name": "혜화",
-    "Nodes": [
+    "NextStations": [
       {
         "Name": "동대문",
         "Time": 90,
@@ -746,7 +746,7 @@
   },
   {
     "Name": "마포",
-    "Nodes": [
+    "NextStations": [
       {
         "Name": "공덕",
         "Time": 100,
@@ -756,7 +756,7 @@
   },
   {
     "Name": "공덕",
-    "Nodes": [
+    "NextStations": [
       {
         "Name": "마포",
         "Time": 100,
@@ -781,7 +781,7 @@
   },
   {
     "Name": "애오개",
-    "Nodes": [
+    "NextStations": [
       {
         "Name": "공덕",
         "Time": 110,
@@ -796,7 +796,7 @@
   },
   {
     "Name": "서대문",
-    "Nodes": [
+    "NextStations": [
       {
         "Name": "충정로",
         "Time": 90,
@@ -811,7 +811,7 @@
   },
   {
     "Name": "광화문",
-    "Nodes": [
+    "NextStations": [
       {
         "Name": "서대문",
         "Time": 120,
@@ -826,7 +826,7 @@
   },
   {
     "Name": "청구",
-    "Nodes": [
+    "NextStations": [
       {
         "Name": "동대문역사문화공원",
         "Time": 100,
@@ -851,7 +851,7 @@
   },
   {
     "Name": "신금호",
-    "Nodes": [
+    "NextStations": [
       {
         "Name": "청구",
         "Time": 100,
@@ -866,7 +866,7 @@
   },
   {
     "Name": "행당",
-    "Nodes": [
+    "NextStations": [
       {
         "Name": "신금호",
         "Time": 100,
@@ -881,7 +881,7 @@
   },
   {
     "Name": "마장",
-    "Nodes": [
+    "NextStations": [
       {
         "Name": "왕십리",
         "Time": 100,
@@ -891,7 +891,7 @@
   },
   {
     "Name": "망원",
-    "Nodes": [
+    "NextStations": [
       {
         "Name": "합정",
         "Time": 100,
@@ -901,7 +901,7 @@
   },
   {
     "Name": "상수",
-    "Nodes": [
+    "NextStations": [
       {
         "Name": "합정",
         "Time": 100,
@@ -916,7 +916,7 @@
   },
   {
     "Name": "광흥창",
-    "Nodes": [
+    "NextStations": [
       {
         "Name": "상수",
         "Time": 100,
@@ -931,7 +931,7 @@
   },
   {
     "Name": "대흥",
-    "Nodes": [
+    "NextStations": [
       {
         "Name": "광흥창",
         "Time": 100,
@@ -946,7 +946,7 @@
   },
   {
     "Name": "효창공원앞",
-    "Nodes": [
+    "NextStations": [
       {
         "Name": "공덕",
         "Time": 100,
@@ -961,7 +961,7 @@
   },
   {
     "Name": "녹사평",
-    "Nodes": [
+    "NextStations": [
       {
         "Name": "삼각지",
         "Time": 110,
@@ -976,7 +976,7 @@
   },
   {
     "Name": "이태원",
-    "Nodes": [
+    "NextStations": [
       {
         "Name": "녹사평",
         "Time": 90,
@@ -991,7 +991,7 @@
   },
   {
     "Name": "한강진",
-    "Nodes": [
+    "NextStations": [
       {
         "Name": "이태원",
         "Time": 100,
@@ -1006,7 +1006,7 @@
   },
   {
     "Name": "버티고개",
-    "Nodes": [
+    "NextStations": [
       {
         "Name": "한강진",
         "Time": 110,
@@ -1021,7 +1021,7 @@
   },
   {
     "Name": "창신",
-    "Nodes": [
+    "NextStations": [
       {
         "Name": "동묘앞",
         "Time": 90,

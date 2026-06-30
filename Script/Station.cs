@@ -9,6 +9,6 @@ namespace RushEightProject
     internal class Station
     {
         public string Name { get; set; }
-        public List<StationNode> Nodes { get; set; } = new List<StationNode>();
+        public List<StationNode> NextStations { get; set; } = new List<StationNode>();
     }
 }

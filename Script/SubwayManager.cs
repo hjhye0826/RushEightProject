@@ -1,7 +1,21 @@
 ﻿using System.Text.Json;
 
+using SerchKey = (string name, int lineNum);
+
 namespace RushEightProject
 {
+    struct SearchResult
+    {
+        public string Route;
+        public int TotalTime;
+
+        public SearchResult(string route, int totalTime)
+        {
+            Route = route;
+            TotalTime = totalTime;
+        }
+    }
+
     internal class SubwayManager
     {
         public const int TransTime = 180;   // 초
@@ -50,17 +64,29 @@ namespace RushEightProject
                 return;
             }
 
-            SearchSubwayRoute(start, end);
+            if (SearchSubwayRoute(start, end, out var result))
+            {
+                Console.WriteLine($"[탐색 결과]: {start} -> {end}");
+                Console.WriteLine($"이동 경로: {result.Route}");
+                Console.WriteLine($"총 소요시간: {result.TotalTime.TimeString()}");
+            }
+            else
+            {
+                Console.WriteLine("경로를 찾을 수 없습니다.");
+            }
         }
 
-        private void SearchSubwayRoute(string start, string end)
+        private bool SearchSubwayRoute(string start, string end, out SearchResult result)
         {
-            var accTimes = new Dictionary<(string, int), int>();
-            var queue = new PriorityQueue<(string, int), int>();
+            result = new SearchResult();
+
+            var routes = new Dictionary<SerchKey, SearchResult>();
+            var queue = new PriorityQueue<SerchKey, int>();
 
             var startStation = Stations[start];
-            var lines = startStation.Nodes.Select(d => d.LineNum).Distinct().ToList();
+            var lines = startStation.NextStations.Select(d => d.LineNum).Distinct().ToList();
 
+            // 다른 호선은 다른역으로 취급
             foreach (var line in lines)
             {
                 queue.Enqueue((startStation.Name, line), 0);
@@ -73,15 +99,18 @@ namespace RushEightProject
                 var stationName = value.Item1;
                 var lineNum = value.Item2;
 
+                // 목적지에 도착하면 종료
                 if (stationName == end)
                 {
-                    Console.WriteLine($"총 소요 시간 : {priority.TimeString()}");
-                    return;
+                    var route = routes[(stationName, lineNum)];
+                    result.Route = route.Route;
+                    result.TotalTime = route.TotalTime;
+                    return true;
                 }
 
+                // 다음 역 탐색
                 var station = Stations[stationName];
-
-                foreach (var nextStation in station.Nodes)
+                foreach (var nextStation in station.NextStations)
                 {
                     var nextTime = priority + nextStation.Time;
                     var transfer = lineNum != nextStation.LineNum;
@@ -92,13 +121,30 @@ namespace RushEightProject
                     }
 
                     var key = (nextStation.Name, nextStation.LineNum);
-                    if (false == accTimes.TryGetValue(key, out var old) || nextTime < old)
+                    if (false == routes.TryGetValue(key, out var old) || nextTime < old.TotalTime)
                     {
-                        accTimes[key] = nextTime;
+                        var route = string.Empty;
+                        if (routes.ContainsKey((stationName, lineNum)))
+                        {
+                            route = $"{routes[(stationName, lineNum)].Route} -> {nextStation.Name}";
+                        }
+                        else
+                        {
+                            route = $"{stationName} -> {nextStation.Name}";
+                        }
+
+                        if (transfer)
+                        {
+                            route = $"{route}(환승)";
+                        }
+
+                        routes[key] = new SearchResult(route, nextTime);
                         queue.Enqueue((nextStation.Name, nextStation.LineNum), nextTime);
                     }
                 }
             }
+
+            return false;
         }
 
         private bool SearchStation(string stationName)
