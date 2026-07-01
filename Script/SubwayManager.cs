@@ -4,31 +4,20 @@ using SerchKey = (string name, int lineNum);
 
 namespace RushEightProject
 {
-    struct SearchResult
-    {
-        public string Route;
-        public int TotalTime;
-
-        public SearchResult(string route, int totalTime)
-        {
-            Route = route;
-            TotalTime = totalTime;
-        }
-    }
-
     internal class SubwayManager
     {
         public const int TransTime = 180;   // 초
 
-        public Dictionary<string, Station> Stations = new Dictionary<string, Station>();
+        public Dictionary<string, StationData> Stations = new Dictionary<string, StationData>();
 
         public void InitSubwayInfo()
         {
-            var path = Path.Combine(AppContext.BaseDirectory, "Data", "SubwayInfo.json");
+            var fileName = "SubwayInfo.json";
+            var path = Path.Combine(AppContext.BaseDirectory, "Data", fileName);
             var json = File.ReadAllText(path);
             
-            Stations = JsonSerializer.Deserialize<List<Station>>(json)?.ToDictionary(d => d.Name, d => d)
-                            ?? throw new InvalidOperationException("SubwayInfo.json 로드 실패");
+            Stations = JsonSerializer.Deserialize<List<StationData>>(json)?.ToDictionary(d => d.Name, d => d)
+                            ?? throw new InvalidOperationException(string.Format(StringTable.GetText("LoadFaile"), fileName));
         }
 
         public void SearchSubway()
@@ -36,43 +25,43 @@ namespace RushEightProject
             var start = string.Empty;
             while (true)
             {
-                Console.Write("출발 역 : ");
-                start = Console.ReadLine();
+                Console.Write($"{StringTable.GetText("StartStation")} : ");
+                start = Console.ReadLine() ?? string.Empty;
 
                 if (SearchStation(start))
                     break;
 
-                Console.WriteLine("존재하지 않는 역입니다, 다시 입력해 주세요");
+                Console.WriteLine(StringTable.GetText("StationNotFound"));
             }
 
             var end = string.Empty;
             while (true)
             {
-                Console.Write("도착 역 : ");
-                end = Console.ReadLine();
+                Console.Write($"{StringTable.GetText("EndStation")} : ");
+                end = Console.ReadLine() ?? string.Empty;
 
                 if (SearchStation(end))
                     break;
 
-                Console.WriteLine("존재하지 않는 역입니다, 다시 입력해 주세요");
+                Console.WriteLine(StringTable.GetText("StationNotFound"));
             }
 
             if (start.Equals(end))
             {
-                Console.WriteLine("출발/도착역이 동일합니다. 다시 입력해 주세요");
+                Console.WriteLine(StringTable.GetText("SameStation"));
                 SearchSubway();
                 return;
             }
 
             if (SearchSubwayRoute(start, end, out var result))
             {
-                Console.WriteLine($"[탐색 결과]: {start} -> {end}");
-                Console.WriteLine($"이동 경로: {result.Route}");
-                Console.WriteLine($"총 소요시간: {result.TotalTime.TimeString()}");
+                Console.WriteLine(string.Format(StringTable.GetText("SearchResultLabel"), start, end));
+                Console.WriteLine(string.Format(StringTable.GetText("RouteLabel"), result.Route));
+                Console.WriteLine(string.Format(StringTable.GetText("TotalTimeLabel"), result.TotalTime.TimeString()));
             }
             else
             {
-                Console.WriteLine("경로를 찾을 수 없습니다.");
+                Console.WriteLine(StringTable.GetText("Route Not Found"));
             }
         }
 
@@ -96,8 +85,8 @@ namespace RushEightProject
             {
                 var q = queue.TryDequeue(out var value, out var priority);
 
-                var stationName = value.Item1;
-                var lineNum = value.Item2;
+                var stationName = value.name;
+                var lineNum = value.lineNum;
 
                 // 목적지에 도착하면 종료
                 if (stationName == end)
@@ -115,6 +104,7 @@ namespace RushEightProject
                     var nextTime = priority + nextStation.Time;
                     var transfer = lineNum != nextStation.LineNum;
 
+                    // 호선이 다를 경우 환승 시간 누적
                     if (transfer)
                     {
                         nextTime += TransTime;
@@ -123,22 +113,20 @@ namespace RushEightProject
                     var key = (nextStation.Name, nextStation.LineNum);
                     if (false == routes.TryGetValue(key, out var old) || nextTime < old.TotalTime)
                     {
-                        var route = string.Empty;
+                        var routeString = string.Empty;
                         if (routes.ContainsKey((stationName, lineNum)))
                         {
-                            route = $"{routes[(stationName, lineNum)].Route} -> {nextStation.Name}";
+                            var prevRoute = routes[(stationName, lineNum)].Route;
+                            var routeKey = transfer ? "TransferRoute" : "Route";
+
+                            routeString = string.Format(StringTable.GetText(routeKey), prevRoute, nextStation.Name);
                         }
                         else
                         {
-                            route = $"{stationName} -> {nextStation.Name}";
+                            routeString = string.Format(StringTable.GetText("Route"), stationName, nextStation.Name);
                         }
 
-                        if (transfer)
-                        {
-                            route = $"{route}(환승)";
-                        }
-
-                        routes[key] = new SearchResult(route, nextTime);
+                        routes[key] = new SearchResult(routeString, nextTime);
                         queue.Enqueue((nextStation.Name, nextStation.LineNum), nextTime);
                     }
                 }

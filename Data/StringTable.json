@@ -1,0 +1,46 @@
+[
+  {
+    "Key": "LoadFaile",
+    "Value": "{0} 로드 실패"
+  },
+  {
+    "Key": "StartStation",
+    "Value": "출발 역"
+  },
+  {
+    "Key": "EndStation",
+    "Value": "도착 역"
+  },
+  {
+    "Key": "StationNotFound",
+    "Value": "존재하지 않는 역입니다, 다시 입력해 주세요"
+  },
+  {
+    "Key": "SameStation",
+    "Value": "출발/도착역이 동일합니다. 다시 입력해 주세요"
+  },
+  {
+    "Key": "SearchResultLabel",
+    "Value": "[탐색 결과]: {0} -> {1}"
+  },
+  {
+    "Key": "RouteLabel",
+    "Value": "이동 경로: {0}"
+  },
+  {
+    "Key": "TotalTimeLabel",
+    "Value": "총 소요시간: {0}"
+  },
+  {
+    "Key": "RouteNotFound",
+    "Value": "경로를 찾을 수 없습니다."
+  },
+  {
+    "Key": "Route",
+    "Value": "{0} -> {1}"
+  },
+  {
+    "Key": "TransferRoute",
+    "Value": "{0}(환승) -> {1}"
+  }
+]

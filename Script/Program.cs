@@ -1,4 +1,5 @@
 ﻿using RushEightProject;
+using System.Diagnostics;
 
 public class Program
 {
@@ -6,8 +7,16 @@ public class Program
     {
         //Console.WriteLine("Hello World");
 
+        StringTable.InitStringTable();
+
         var subway = new SubwayManager();
         subway.InitSubwayInfo();
-        subway.SearchSubway();
+
+        while (true)
+        {
+            subway.SearchSubway();
+
+            Console.WriteLine("-----------------------------------------------");
+        }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RushEightProject
 {
-    internal class Station
+    internal class StationData
     {
         public string Name { get; set; }
         public List<StationNode> NextStations { get; set; } = new List<StationNode>();
