@@ -4,7 +4,7 @@ namespace RushEightProject
 {
     public static class StringTable
     {
-        public class StringTableData
+        private class StringTableData
         {
             public string Key { get; set; } = string.Empty;
             public string Value { get; set; } = string.Empty;

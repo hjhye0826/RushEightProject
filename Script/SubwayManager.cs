@@ -113,6 +113,7 @@ namespace RushEightProject
                     var key = (nextStation.Name, nextStation.LineNum);
                     if (false == routes.TryGetValue(key, out var old) || nextTime < old.TotalTime)
                     {
+                        // 이동 경로 관련 string
                         var routeString = string.Empty;
                         if (routes.ContainsKey((stationName, lineNum)))
                         {
@@ -127,6 +128,8 @@ namespace RushEightProject
                         }
 
                         routes[key] = new SearchResult(routeString, nextTime);
+
+                        // 다음 역 정보
                         queue.Enqueue((nextStation.Name, nextStation.LineNum), nextTime);
                     }
                 }

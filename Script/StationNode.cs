@@ -8,8 +8,8 @@ namespace RushEightProject
 {
     internal class StationNode
     {
-        public String Name { get; set; }
-        public int Time { get; set; }
-        public int LineNum { get; set; }
+        public String Name { get; set; } = string.Empty;
+        public int Time { get; set; } = 0;
+        public int LineNum { get; set; } = 0;
     }
 }

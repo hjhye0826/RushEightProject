@@ -8,7 +8,7 @@ namespace RushEightProject
 {
     internal class StationData
     {
-        public string Name { get; set; }
+        public string Name { get; set; } = string.Empty;
         public List<StationNode> NextStations { get; set; } = new List<StationNode>();
     }
 }
