@@ -29,7 +29,7 @@ namespace RushEightProject
             var str = _stringTable.GetValueOrDefault(key);
             str = str?.Replace("\\n", "\n");
 
-            return str ?? string.Empty;
+            return str ?? key;
         }
     }
 }

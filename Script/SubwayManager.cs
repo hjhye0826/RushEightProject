@@ -61,7 +61,7 @@ namespace RushEightProject
             }
             else
             {
-                Console.WriteLine(StringTable.GetText("Route Not Found"));
+                Console.WriteLine(StringTable.GetText("RouteNotFound"));
             }
         }
 
